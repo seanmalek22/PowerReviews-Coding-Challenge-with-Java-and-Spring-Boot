@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "rating": "3",
+    "username": "sportsfan19",
+    "comment": "Chipotle does have great tacos, but personally, I like Qdoba better.",
+    "date": "4/8/2016",
+    "time": "11:12am"
+  },
+  {
+    "id": 2,
+    "rating": "5",
+    "username": "fastfoodlover99",
+    "comment": "Jimmy Johns sure is FREAKY FAST! Great food and great delivery service.",
+    "date": "3/10/2019",
+    "time": "3:31pm"
+  },
+  {
+    "id": 3,
+    "rating": "4",
+    "username": "ekelly91",
+    "comment": "I think their sushi is above average, but it's not one of my favorites.",
+    "date": "11/27/2013",
+    "time": "8:47pm"
+  },
+  {
+    "id": 4,
+    "rating": "5",
+    "username": "stevemcgarrett09",
+    "comment": "The italian sandwiches and pizza sandwiches at Potbelly are very delicious.",
+    "date": "4/15/2018",
+    "time": "7:53am"
+  },
+  {
+    "id": 5,
+    "rating": "1",
+    "username": "tacobellsucks12",
+    "comment": "I found a bug in one of my tacos last week. The place is disgusting!",
+    "date": "6/16/2019",
+    "time": "12:44pm"
+  },
+  {
+    "id": 6,
+    "rating": "4",
+    "username": "californiadreamer90",
+    "comment": "I have visited many Mediterranean restaurants, and Taza is the best around town.",
+    "date": "12/2/2016",
+    "time": "5:22pm"
+  },
+  {
+    "id": 7,
+    "rating": "3",
+    "username": "burgerbob43",
+    "comment": "I go to this restaurant every once in a while with my family. The restaurant is very family friendly.",
+    "date": "10/24/2015",
+    "time": "2:58pm"
+  },
+  {
+    "id": 8,
+    "rating": "2",
+    "username": "cheeseburgereater55",
+    "comment": "I can get a better cheeseburger at the local McDonalds than this joint. Do Not Recommend!",
+    "date": "11/7/2017",
+    "time": "10:09am"
+  }
+]

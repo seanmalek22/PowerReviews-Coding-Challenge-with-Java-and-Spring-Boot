@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Sean Malek Coding Assessment</title>
+</head>
+<body>
+<h1>Restaurant Average Rating!</h1>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Type</th>
+		<th>Latitude</th>
+		<th>Longitude</th>
+	</tr>
+	<tr th:each="restaurant: ${restaurant}">
+		<td align="center" th:text="${restaurant.id}">ID</td>
+		<td align="center" th:text="${restaurant.name}">Name</td>
+		<td align="center" th:text="${restaurant.type}">Type</td>
+		<td align="center" th:text="${restaurant.latitude}">Latitude</td>
+		<td align="center" th:text="${restaurant.longitude}">Longitude</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th>Average Rating for Restaurant</th>
+	</tr>
+	<tr>
+		<td align="center" th:text="${avgRating} + '/5'">AverageRating</td>
+	</tr>
+</table>
+
+</body>
+</html>

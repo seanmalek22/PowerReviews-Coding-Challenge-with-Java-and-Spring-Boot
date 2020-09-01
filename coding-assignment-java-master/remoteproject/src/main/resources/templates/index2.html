@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Sean Malek Coding Assessment</title>
+</head>
+<body>
+<h1>Restaurant Reviews!</h1>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Type</th>
+		<th>Latitude</th>
+		<th>Longitude</th>
+		<th>Average Customer Rating</th>
+	</tr>
+	<tr th:each="restaurant: ${restaurant}">
+		<td align="center" th:text="${restaurant.id}">ID</td>
+		<td align="center" th:text="${restaurant.name}">Name</td>
+		<td align="center" th:text="${restaurant.type}">Type</td>
+		<td align="center" th:text="${restaurant.latitude}">Latitude</td>
+		<td align="center" th:text="${restaurant.longitude}">Longitude</td>
+		<td align="center" th:text="${avgRating} + '/5'">Average Customer Rating</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Username</th>
+		<th>Rating</th>
+		<th>Comment</th>
+		<th>Date</th>
+		<th>Time</th>
+	</tr>
+	<tr th:each="customer: ${customer}">
+		<td align="center" th:text="${customer.id}">ID</td>
+		<td align="center" th:text="${customer.username}">Username</td>
+		<td align="center" th:text="${customer.rating}">Rating</td>
+		<td align="center" th:text="${customer.comment}">Comment</td>
+		<td align="center" th:text="${customer.date}">Date</td>
+		<td align="center" th:text="${customer.time}">Time</td>
+	</tr>
+</table>
+
+</body>
+</html>

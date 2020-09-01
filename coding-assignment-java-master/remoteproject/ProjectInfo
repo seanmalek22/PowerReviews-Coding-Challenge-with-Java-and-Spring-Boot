@@ -1,0 +1,37 @@
+
+At the beginning, there are 8 restaurants in the database, and one comment associated with each restaurant.
+
+
+Display:
+
+To see each individual restaurant (including its information) and all the reviews added for that restaurant (including the restaurant's average
+rating), you must go to http://localhost:8080/restaurant/{id}/reviews
+
+To see the restaurants that have been saved in the database, you must go to http://localhost:8080/restaurants/list
+
+Lastly, to see the restaurant and only its average rating, you must go to http://localhost:8080/restaurant/{id}/averagerating
+
+
+
+Curl Requests:
+
+Restaurant Curl Request Examples:
+
+Get: curl -X GET "http://localhost:8080/restaurant/1" -H "accept: application/json"
+
+Post: curl -X POST "http://localhost:8080/restaurant" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"id\": 9, \"latitude\": \"31.92839\", \"longitude\": \"-54.90384\", \"name\": \"Qdoba\", \"type\": \"Tacos\"}"
+
+Put: curl -X PUT "http://localhost:8080/restaurant" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"id\": 1, \"latitude\": \"47.23429\", \"longitude\": \"-18.93450\", \"name\": \"Jersey Mikes\", \"type\": \"Sandwiches\"}"
+
+Delete: curl -X DELETE "http://localhost:8080/restaurant/9" -H "accept: application/json"
+
+
+Customer Curl Request Examples:
+
+Get: curl -X GET "http://localhost:8080/reviews/1" -H "accept: application/json"
+
+Post: curl -X POST "http://localhost:8080/review" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"comment\": \"Chipotle always tastes delicious in the moment, but it always makes me feel bloated afterwards.\", \"date\": \"09/14/2017\", \"id\": 1, \"rating\": 4, \"time\": \"3:00pm\", \"username\": \"testcase1\"}"
+
+Put: curl -X PUT "http://localhost:8080/review" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"comment\": \"Did not like the food at all.\", \"date\": \"01/22/2018\", \"id\": 1, \"rating\": 1, \"time\": \"5:00pm\", \"username\": \"testcase2\"}"
+
+Delete: curl -X DELETE "http://localhost:8080/review/1" -H "accept: application/json"
